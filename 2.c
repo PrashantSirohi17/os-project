@@ -1,0 +1,19 @@
+		do{
+			printf("Burst:");
+			printf("%f",&bt[i]);
+			p[i]=i+1;
+			tbt=tbt+bt[i];
+			if(bt[i<=0])
+			printf("\tINvalid burst time please enter again\n");
+		}while(bt[i]<=0);
+	}
+	for(l=0;l<n;l++)
+	{
+		pos=l;
+		for(m=l+1;m<n;m++)
+		{
+			if(at[m]<at[pos])
+			pos=m;
+		}
+		swap(pos,1);
+	}
